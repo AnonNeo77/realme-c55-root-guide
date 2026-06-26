@@ -92,6 +92,8 @@ This repository focuses on documenting the architecture and behavior of the boot
 
 ---
 
+## Fastbootd on the Realme C55
+
 The Realme C55 provides access to Fastbootd through the recovery environment.
 
 Fastbootd supports many partition management operations, including:
