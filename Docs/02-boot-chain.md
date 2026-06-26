@@ -108,7 +108,8 @@ AVB uses `vbmeta` metadata to validate partitions such as:
 
 If verification fails, the device may refuse to boot or display a boot verification warning depending on the bootloader state.
 
-<img width="1080" height="2400" alt="AVB-protection" src="https://github.com/user-attachments/assets/73abce89-e5f9-4dbc-99dc-4cb780ed784f" />
+<img width="1080" height="2400" alt="AVB-protection (1)" src="https://github.com/user-attachments/assets/cdfac734-bc3c-4dfb-8727-478e2eb3cf64" />
+
 
 ---
 
