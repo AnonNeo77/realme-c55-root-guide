@@ -63,6 +63,8 @@ userdata.img
 ...
 ```
 
+<img width="526" height="233" alt="Screenshot 2026-06-26 165015" src="https://github.com/user-attachments/assets/00277895-8450-46cc-b7d0-3cbbcd03c26f" />
+
 At this stage, `boot.img` is available for analysis or patching.
 
 ---
