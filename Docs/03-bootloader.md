@@ -79,6 +79,9 @@ Fastboot is commonly accessed from a computer using the Android Platform Tools.
 
 Unlike many Android devices, the Realme C55 does not expose the standard Fastboot interface on retail firmware by default.
 
+<img width="720" height="1280" alt="fastboot_ver-fail" src="https://github.com/user-attachments/assets/8365ad01-9b60-4ede-b88b-451d040a9a47" />
+
+
 Historically, Realme provided a **Deep Testing** application for selected devices. This application initiated the official bootloader unlocking process and enabled Fastboot mode on supported models.
 
 However, Deep Testing was not released for every Realme device or firmware version. As a result, official bootloader unlocking support varies depending on the device model and software version.
@@ -86,6 +89,22 @@ However, Deep Testing was not released for every Realme device or firmware versi
 Because of these differences, community research has explored the Realme bootloader implementation and its interaction with the Little Kernel (LK) bootloader to better understand Fastboot behavior on unsupported devices.
 
 This repository focuses on documenting the architecture and behavior of the bootloader rather than providing instructions for modifying it.
+
+---
+
+The Realme C55 provides access to Fastbootd through the recovery environment.
+
+Fastbootd supports many partition management operations, including:
+
+Flashing logical partitions
+Flashing boot
+Flashing vendor_boot
+Flashing vbmeta
+Flashing dtbo
+Erasing supported partitions
+Rebooting between boot modes
+
+However, Fastbootd cannot unlock the bootloader, because bootloader unlocking is a function of the bootloader itself rather than Android userspace.
 
 ---
 
@@ -109,6 +128,8 @@ Understanding LK is useful when studying the Android boot process because it for
 ## Orange State
 
 After unlocking the bootloader, many Realme devices display an **Orange State** warning during startup.
+
+<img width="150" height="262" alt="orange-state" src="https://github.com/user-attachments/assets/f5fd4df4-937d-45b9-a014-b2786aad5820" />
 
 This warning indicates that the bootloader is unlocked and the integrity of the software can no longer be guaranteed by the manufacturer.
 
