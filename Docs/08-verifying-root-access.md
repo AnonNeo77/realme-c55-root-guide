@@ -9,7 +9,10 @@ and the integrity of the environment itself.
 This document covers verification at the application layer, shell layer, and
 Magisk internals.
 
-<img width="1080" height="2280" alt="root_access" src="https://github.com/user-attachments/assets/cc162a0a-8d1b-458e-b294-023c77d25415" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cc162a0a-8d1b-458e-b294-023c77d25415"
+       width="350">
+</p>
 
 ---
 
