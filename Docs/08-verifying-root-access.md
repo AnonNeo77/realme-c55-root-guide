@@ -20,7 +20,10 @@ Magisk internals.
 
 Open the Magisk application. The main screen should report:
 
-<img width="480" height="501" alt="root" src="https://github.com/user-attachments/assets/fb2e1511-7dae-44da-a3b2-5930301331ae" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fb2e1511-7dae-44da-a3b2-5930301331ae"
+       width="300">
+</p>
 
 
 | Field             | Expected Value                        |
