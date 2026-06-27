@@ -19,11 +19,20 @@ physical `super` block device.
 
 These exist as real partitions in the GPT partition table:
 
-boot        preloader       vbmeta
+boot
+lk
+preloader       
+vbmeta
+dtbo        
+gz
+tee
+md1img
+persist
+super 
+metadata        
+userdata
+mdc_udc
 
-dtbo        recovery        persist
-
-super       metadata        userdata
 
 These are directly addressable by the bootloader and MTKClient.
 
@@ -32,11 +41,13 @@ These are directly addressable by the bootloader and MTKClient.
 These exist only within the `super` physical partition and are managed by
 `dm-linear`: 
 
-system      system_ext
-
-vendor      vendor_dlkm
-
-product     odm
+system
+system_ext
+vendor
+my_engineering
+vendor_dlkm
+product 
+odm
 
 These are **not** visible as separate partitions to the bootloader. They are
 mapped into the device-mapper at runtime by the init process.
