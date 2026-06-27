@@ -276,10 +276,3 @@ contain device-specific IMEI and calibration data that cannot be recovered
 from public sources once overwritten.
 
 ---
-
-## Next
-
-`12-firmware-extraction-and-analysis.md` — Extracting partition images from
-official Realme firmware packages, unpacking super.img, and setting up a
-static analysis environment for the RMX3710.
-
