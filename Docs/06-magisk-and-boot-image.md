@@ -53,8 +53,12 @@ Browse to the previously extracted `boot.img` and select it.
 
 Magisk reads the image and prepares it for modification.
 
-<img width="1080" height="2400" alt="select_boot img" src="https://github.com/user-attachments/assets/0a1e4515-d1dc-4aba-80d4-cd55104fb898" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0a1e4515-d1dc-4aba-80d4-cd55104fb898" width="300">
+</p>
 
+<p align="center">
+</p>
 
 ---
 
@@ -75,7 +79,12 @@ Unlike older rooting methods, Magisk does **not** modify the Android system part
 
 Instead, it modifies the boot image so its initialization code executes during the early boot process.
 
-<img width="1080" height="2400" alt="patching" src="https://github.com/user-attachments/assets/c26d7f0c-2477-4f46-a85d-15e6fa28bf85" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c26d7f0c-2477-4f46-a85d-15e6fa28bf85" width="300">
+</p>
+
+<p align="center">
+</p>
 
 ---
 
