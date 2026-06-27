@@ -23,7 +23,7 @@ introduced across Android 13, 14, and 15 releases.
 | Model      | Realme C55                   |
 | Codename   | RMX3710                      |
 | SoC        | MediaTek Helio G88 (MT6769)  |
-| Android    | Ships Android 13 / 14 / 15   |
+| Android    | Ships Android 13    |
 | Bootloader | Not exposed via standard Fastboot |
 | Recovery   | No dedicated recovery partition |
 
