@@ -43,6 +43,8 @@ via the Preloader or BootROM interface. It provides scripted, partition-aware
 read/write operations and is the primary tool used throughout this
 documentation.
 
+<img width="2946" height="1646" alt="device-detected" src="https://github.com/user-attachments/assets/caa7d5ed-56ad-4936-88db-456baa3b8bb5" />
+
 Best suited for:
 - Individual partition backup and restore
 - Bootloader unlock
@@ -53,6 +55,8 @@ Best suited for:
 SP Flash Tool is a MediaTek-provided GUI application for firmware flashing. On
 the RMX3710 it is generally **faster than MTKClient** for full firmware
 flashing operations, particularly when writing large images like `super`.
+
+<img width="1920" height="1080" alt="sp-flash-tool" src="https://github.com/user-attachments/assets/c4cda626-6ef6-4882-ab51-6d1edf08b9cf" />
 
 Best suited for:
 - Full firmware restoration from a scatter file
