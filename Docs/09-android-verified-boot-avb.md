@@ -99,7 +99,7 @@ proceeds with a warning rather than blocking boot.
 On a **locked** bootloader, flashing a modified `boot.img` would result in
 RED state and a boot failure — which is why bootloader unlock is a prerequisite.
 
-<p align="center">
+<p align="left">
   <img src="https://github.com/user-attachments/assets/820ff3f2-d0fd-47dc-9174-59793b9373e1"
        width="350">
 </p>
