@@ -79,13 +79,20 @@ MTKClient communicates with the device at the BootROM/Preloader stage — before
 the main OS loads — which is what allows operations that the locked bootloader
 would otherwise block.
 
+<img width="2946" height="1646" alt="running-cmd" src="https://github.com/user-attachments/assets/b6a695c6-7259-4038-b07a-5991b13e1ec8" />
+
+
 ```bash
 python mtk da seccfg unlock
 ```
 
+<img width="2946" height="1646" alt="device-detected" src="https://github.com/user-attachments/assets/5309da3c-c3bc-49f9-ac12-6fd794c76d4b" />
+
 After the unlock command completes, the device reboots. The bootloader is now
 in an unlocked state. Android Verified Boot will display a warning on every
 subsequent boot — this is expected behavior.
+
+<img width="2946" height="1646" alt="already-unlocked" src="https://github.com/user-attachments/assets/ec80f308-8e64-4d29-acaf-38a9ccdc8484" />
 
 > **Note:** Bootloader unlock triggers a factory reset on first boot. This is
 > enforced by the bootloader itself, not by Realme software.
