@@ -26,6 +26,8 @@ Open the Magisk application. The main screen should report:
 </p>
 
 
+
+
 | Field             | Expected Value                        |
 |-------------------|---------------------------------------|
 | Magisk            | Installed (version number)            |
