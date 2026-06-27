@@ -30,7 +30,12 @@ Launch the Magisk application.
 Initially, Magisk reports that it is **not installed**, since the patched boot image has not yet been flashed to the device.
 
 
-<img width="1080" height="2400" alt="magisk_home" src="https://github.com/user-attachments/assets/1e7db8a1-4e64-46a8-a05b-ae8b6f783abc" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1e7db8a1-4e64-46a8-a05b-ae8b6f783abc" width="300">
+</p>
+
+<p align="center">
+</p>
 
 ---
 
