@@ -252,7 +252,7 @@ eMMC access) is required and outside the scope of this document.
 | Corrupted super | Bootloop post-kernel | Restore `super` via SP Flash Tool |
 | vbmeta mismatch | No boot, AVB error | Restore `vbmeta` via MTKClient |
 | OTA overwrote root | Boots, no root | Repatch and reflash `boot` |
-| Preloader corrupted | No USB detection | mtkclient/bypass_utility → BootROM → SP Flash Tool |
+| Preloader corrupted | No USB detection | mtkclient/SP Flash Tool |
 | nvram/nvcfg/md1img overwritten | No IMEI, no signal | Restore from device backup or paid tool |
 | MTKClient auth rejected | Connection fails | Run bypass_utility first |
 | Incompatible firmware | MTKClient fails | Downgrade via Realme OTA |
