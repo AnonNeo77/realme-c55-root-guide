@@ -9,11 +9,16 @@ and the integrity of the environment itself.
 This document covers verification at the application layer, shell layer, and
 Magisk internals.
 
+<img width="1080" height="2280" alt="root_access" src="https://github.com/user-attachments/assets/cc162a0a-8d1b-458e-b294-023c77d25415" />
+
 ---
 
 ## Magisk App Verification
 
 Open the Magisk application. The main screen should report:
+
+<img width="480" height="501" alt="root" src="https://github.com/user-attachments/assets/fb2e1511-7dae-44da-a3b2-5930301331ae" />
+
 
 | Field             | Expected Value                        |
 |-------------------|---------------------------------------|
