@@ -15,7 +15,7 @@ Realme locked down MTKClient-accessible interfaces in later firmware builds:
 
 | Android Version | Bootloader Interface | MTKClient Access |
 |-----------------|----------------------|------------------|
-| Android 13      | Not exposed via ADB  | Available        |
+| Android 13      | Not exposed  | Available        |
 | Android 14 (<1800 build) | Not exposed | Available     |
 | Android 14 (≥1800 build) | Not exposed | Patched         |
 | Android 15      | Not exposed          | Patched          |
