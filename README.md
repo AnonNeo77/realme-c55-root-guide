@@ -5,6 +5,8 @@ Realme C55 (RMX3710). Covers the full process from stock firmware to rooted
 device, including the MediaTek-specific toolchain required, AVB internals,
 dynamic partition structure, and first-hand recovery from a hard brick.
 
+<img width="1600" height="1600" alt="relame-c55" src="https://github.com/user-attachments/assets/6e52e47b-3005-4d03-8bb3-73a05e3b1e9c" />
+
 This is not a generic Android rooting guide. Everything here is specific to
 the RMX3710 hardware, its MediaTek MT6769 SoC, and the firmware constraints
 introduced across Android 13, 14, and 15 releases.
