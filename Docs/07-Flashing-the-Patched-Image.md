@@ -37,6 +37,10 @@ https://download.c.realme.com/flash/Rollbackpack/realme_C55/UI4.0/354_sign_RMX37
 
 https://download.c.realme.com/flash/Rollbackpack/RMX3710/564_sign_RMX3710_11_C_OTA_1320_all_cmR1XP_00011011.zip (android 15 to 14)
 
+1)Download this rollback package in internal storage
+2)Enable developer option in settings --> Version --> Version No (tap 5 times)
+3)In About device --> realme ui (ota update page) --> click the three dots and select local install and path to the rollback package.
+
 Downgrade packages are distributed by the community (e.g., on XDA and Realme
 community forums). These are official Realme OTA packages repurposed for
 downgrading, not custom firmware.
