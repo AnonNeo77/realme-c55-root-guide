@@ -34,7 +34,6 @@ downgraded using a Realme downgrade OTA package.
 **Downgrade path:**
 
 https://download.c.realme.com/flash/Rollbackpack/realme_C55/UI4.0/354_sign_RMX3710_11_A_OTA_0630_all_a68b71_00011011.zip (android 14 to  13)
-
 https://download.c.realme.com/flash/Rollbackpack/RMX3710/564_sign_RMX3710_11_C_OTA_1320_all_cmR1XP_00011011.zip (android 15 to 14)
 
 Downgrade packages are distributed by the community (e.g., on XDA and Realme
