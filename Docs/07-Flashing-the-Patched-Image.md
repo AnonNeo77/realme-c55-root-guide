@@ -33,6 +33,8 @@ downgraded using a Realme downgrade OTA package.
 
 **Downgrade path:**
 
+https://download.c.realme.com/flash/Rollbackpack/realme_C55/UI4.0/354_sign_RMX3710_11_A_OTA_0630_all_a68b71_00011011.zip
+
 Downgrade packages are distributed by the community (e.g., on XDA and Realme
 community forums). These are official Realme OTA packages repurposed for
 downgrading, not custom firmware.
