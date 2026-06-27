@@ -1,3 +1,37 @@
+# 13 - Lessons Learned: From Rooting to Hard Brick and Back
+
+## Overview
+
+This document is a first-person account of the full rooting process on my
+Realme C55 (RMX3710) — what I did, what went wrong, how the device hard
+bricked during a partition erase operation, how I recovered it via BootROM,
+and how I dealt with IMEI loss afterward.
+
+This exists because most guides describe the happy path. This is the other one.
+
+---
+
+## Starting Point
+
+- Device: Realme C55 (RMX3710)
+- Firmware at start: Android 14 (build ≥1800 — MTKClient already patched)
+- Bootloader: Locked
+- Goal: Root access for firmware analysis and security research
+
+The first problem was immediate — MTKClient could not connect. Preloader
+authentication on Android 14 (≥1800 build) rejected every connection attempt.
+
+---
+
+## Stage 1: Downgrading to Android 13
+
+Since MTKClient was blocked on Android 14, the only path was downgrading to
+Android 13 where the Preloader interface was still accessible.
+
+Downgrade OTA packages were obtained from the Realme community. The path
+required two steps:
+Android 14 (≥1800) → Android 14 (compatible build) → Android 13
+
 Each step wiped the device. After reaching Android 13, MTKClient detected the
 device successfully.
 
