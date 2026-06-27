@@ -88,7 +88,7 @@ With the bootloader unlocked, the patched `boot.img` is written to the boot
 partition using MTKClient.
 
 ```bash
-python mtk w boot patched_boot.img
+python mtk w boot_a patched_boot.img
 ```
 
 MTKClient handles the partition write through the Preloader interface.
@@ -139,7 +139,7 @@ After Android finishes booting:
 If the device does not boot after flashing, restore the stock `boot.img`:
 
 ```bash
-python mtk w boot stock_boot.img
+python mtk w boot_a stock_boot.img
 ```
 
 This does not re-lock the bootloader. The device will boot normally on the
