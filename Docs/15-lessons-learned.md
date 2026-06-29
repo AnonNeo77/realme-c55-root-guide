@@ -63,8 +63,7 @@ Device booted. Magisk initialized. Root confirmed.
 
 ## Stage 4: Where It Went Wrong
 
-Flashing the custom ROM left the device unresponsive — no boot screen, no
-response to button combinations, nothing.
+Flashing the custom ROM left the device in bootloop .
 
 **First recovery attempt:** erase the `super` partition and reflash it from
 the firmware package. That partially worked. The device powered on — but shut
