@@ -79,8 +79,10 @@ Fastboot is commonly accessed from a computer using the Android Platform Tools.
 
 Unlike many Android devices, the Realme C55 does not expose the standard Fastboot interface on retail firmware by default.
 
-<img width="720" height="1280" alt="fastboot_ver-fail" src="https://github.com/user-attachments/assets/8365ad01-9b60-4ede-b88b-451d040a9a47" />
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8365ad01-9b60-4ede-b88b-451d040a9a47"
+       width="350">
+</p>
 
 Historically, Realme provided a **Deep Testing** application for selected devices. This application initiated the official bootloader unlocking process and enabled Fastboot mode on supported models.
 
