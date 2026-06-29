@@ -61,36 +61,45 @@ Device booted. Magisk initialized. Root confirmed.
 
 ---
 
-## Stage 4: Where It Went Wrong — The Erase
+## Stage 4: Where It Went Wrong
 
-The device was not powering on at some point during this process. It appeared
-completely unresponsive — no boot screen, no response to button combinations,
-nothing.
+Flashing the custom ROM left the device unresponsive — no boot screen, no
+response to button combinations, nothing.
 
-My assumption at the time: the firmware was corrupted. The fix in my head:
-erase everything and reflash clean. I assumed the firmware package contained
-every partition image needed to fully restore the device.
+**First recovery attempt:** erase the `super` partition and reflash it from
+the firmware package. That partially worked. The device powered on — but shut
+itself off automatically every time, stuck in a power-on/power-off loop.
 
-That assumption was wrong on two counts.
+At that point I panicked. The logic seemed sound: erase every partition and
+reflash the complete firmware package to get back to a guaranteed clean state.
+
+That decision made things significantly worse.
 
 **First:** The firmware package does not contain device-specific partition
-images. `nvram`, `nvcfg`, and `md1img` in a firmware package contain generic
-factory defaults, not the calibration data written to my specific unit at
-manufacture.
+images. `nvram` and `nvcfg` store modem calibration data and the IMEI written
+to the specific unit at manufacture. These are not included in the firmware
+package because they cannot be generalized across units. Erasing them and
+reflashing firmware leaves those partitions either empty or populated with
+generic factory defaults.
 
 **Second:** Erasing all partitions via MTKClient is not equivalent to
-reflashing clean firmware. If the erase operation is interrupted, fails
-partway, or erases partitions the bootloader depends on before they can be
-rewritten, the device can reach a state where it cannot even enter Preloader
-mode.
+reflashing clean firmware. Partitions such as `nvram` and `nvcfg` must exist
+with device-specific data intact. Once erased, the firmware package has no
+replacement images for them.
 
-Something went wrong during the erase. MTKClient did not complete cleanly.
-The result: the device was now actually hard bricked — no display, no USB
-detection in Preloader mode, no response at all.
+The device booted after the reflash. But the IMEI was gone — the baseband
+showed as unknown, and cellular connectivity was lost entirely.
 
-What I thought was a firmware problem before the erase was likely a much
-simpler issue. The erase turned a recoverable situation into a hard brick.
+The actual sequence of mistakes:
 
+- Custom ROM flash → broke boot, device unresponsive
+- Erase `super` →  persistent bootloop
+- Panic erase all partitions → `nvram` and `nvcfg` destroyed
+- Firmware reflash → device boots, IMEI lost, baseband dead
+
+The bootloop after erasing `super` was almost certainly recoverable without
+touching `nvram` or `nvcfg` at all. The erase-everything decision turned a
+software problem into permanent calibration/IMEI data loss.
 ---
 
 ## Stage 5: Diagnosing the Brick
